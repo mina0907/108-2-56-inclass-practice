@@ -9,25 +9,17 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## R Markdown
-```{r}
-library(googlesheets4)
-```
-```{r}
-a <- 2
-a = 2 # = 與 <-同義
-```
-```{r}
-3 -> b
-```
 
 
+```{r}
 ```{r}
 library(googlesheets4)
 `出席狀況表單網址` <- "https://docs.google.com/spreadsheets/d/1EAG49qDKPWWi0ebkVr29TLrvVnoBPfkvxYY-J3xLAHY/edit#gid=2135249197 "# 缺乏定義值
 ss <- as_sheets_id(`出席狀況表單網址`)
 homework_sheet <- sheets_read(ss,sheet=1)
 ```
+```
+
 
 
 ```{r}
