@@ -6,13 +6,10 @@ output: html_document
 ---
 
 ```{r}
-library(lubridate)
-list(
-  ymd_hms("2020-03-31T13:40:55Z"),
-  "一芳",
-  2,
-  "水果茶"
-)
+vectorExample <- c("小明","小英","大雄")
+
+# 有多少位置可選：
+length(vectorExample)
 ```
 ```{r}
 list(
@@ -45,4 +42,50 @@ commit <- list(
 print(commit)
 
 ```
+```{r}
+fromJSON("http://data.ntpc.gov.tw/api/v1/rest/datastore/382000000A-000157-002",
+         simplifyDataFrame = F) -> newTaipeiCityVaccine
+```
+
+```{r}
+str(newTaipeiCityVaccine[[1]])
+```
+
+```{r}
+# 108-1 
+course1_1081 <- 
+  list(
+    name="個體經濟學",
+    teacher="Alice",
+    grade=85
+  )
+course2_1081 <-
+  list(
+    name="總體經濟學",
+    teacher="Mark",
+    grade=78
+  )
+`108-1修課記錄` <- 
+  list(
+    course1_1081,
+    course2_1081
+  )
+
+# 108-2
+course1_1082 <- 
+  list(
+    name="作業研究",
+    teacher="Jason",
+    grade=90
+  )
+`108-2修課記錄` <- 
+  list(
+    course1_1082
+  )
+str(course1_1081)
+```
+
+
+
+
 
