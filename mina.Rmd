@@ -63,5 +63,11 @@ str(list1)
 ```{r}
 list1[[1]]$birthday <- ymd("1997-10-27")
 str(list1)
+
+list1[[2]] <- list(
+  name =" Mary" ,
+  birthday = ymd("1988-08-25")
+) 
+str(list1)
 ```
 
