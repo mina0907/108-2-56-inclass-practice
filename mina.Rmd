@@ -5,69 +5,21 @@ date: "2020/3/18"
 output: html_document
 ```
 ---
+
 ```{r}
-majors <- c("經濟學系","經濟學系","社會學系","社工系","經濟學系")
-names <- c("小英", "小美", "大雄","阿華", "阿尼")
-gender <- c("F","F","M","F","M")
-
-econOnly <- c(T,T,F,F,T) 
-names[econOnly]
-gender[econOnly] 
-
-econFemaleOnly<-c(T,T,F)
-gender[econOnly][econFemaleOnly]
-names[econOnly][econFemaleOnly]
+# 狀況二: 倍數堆疊一定會超過，只好截斷
+c(2,3)/c(-2,-13,10)
+c(2,3,2)/c(-2,-13,10)
 ```
 
 ```{r}
-# 10位學生的主系
-majors10_char <- c('經濟學系','社會學系','社會學系','經濟學系','經濟學系','社會學系','經濟學系','經濟學系','經濟學系','社會學系')
+jsonlite::fromJSON("https://www.dropbox.com/s/3uijub7xheib405/list_victimAges_female.json?dl=1", simplifyDataFrame = F) -> list_victimAges_female
+str(list_victimAges_female)
 
-typeof(majors10_char)
-class(majors10_char)
 ```
+1.請將list_victimAges_female各元素的class做合理設定。
 ```{r}
-majors10_factor <- factor(majors10_char)
-# 或
-majors10_factor <- factor(
-  c('經濟學系','社會學系','社會學系','經濟學系','經濟學系','社會學系','經濟學系','經濟學系','經濟學系','社會學系')
-)
-
-typeof(majors10_factor)
-class(majors10_factor)
-as.integer(majors10_factor) 
-levels(majors10_factor)
-```
-```{r}
-a <- c("1","b","TRUE")
-a[[2]] <- "c" # 元素存在: 替換
-a[[4]] <- "7" # 元素不存在： 增加
-a[c(5,6)] <- c("J", "K")
-a[[7]]<-"Johnson"
-```
-
-```{r}
-library(lubridate)
-list1 <- 
-  list(
-    list(
-      name="Jack",
-      birthday=ymd("1998-03-21"),
-      status=c(height=177, weight=80)
-    )
-  )
-
-str(list1)
-```
-
-```{r}
-list1[[1]]$birthday <- ymd("1997-10-27")
-str(list1)
-
-list1[[2]] <- list(
-  name =" Mary" ,
-  birthday = ymd("1988-08-25")
-) 
-str(list1)
+list_victimAges_female$數目<- as.integer(list_victimAges_female$數目)
+list_victimAges_female$年齡層<- as.factor(list_victimAges_female$年齡層)
 ```
 
