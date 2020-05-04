@@ -22,4 +22,35 @@ str(list_victimAges_female)
 list_victimAges_female$數目<- as.integer(list_victimAges_female$數目)
 list_victimAges_female$年齡層<- as.factor(list_victimAges_female$年齡層)
 ```
+2.將levels順序改成: 不詳，總計，0_5歲，12_17歲，…，70歲以上。
+```{r}
+levels(list_victimAges_female$年齡層) -> levels_ages
+print(levels_ages)
+```
+```{r}
+list_victimAges_female$數目 <- as.integer(list_victimAges_female$數目)
+pick_na <- is.na(list_victimAges_female$數目)
+total_na <- sum(pick_na)
+total_na
+```
+
+```{r}
+source("https://www.dropbox.com/s/qsrw069n94k61lj/transcript100to103_list.R?dl=1")
+str(transcript100to103)
+```
+```{r}
+# 各學屆2年級人數
+table(transcript100to103$學屆)
+# 各學屆2年級成績大於85年數
+table(transcript100to103$學屆[pick_above85])
+# 只要成績大於85的
+pick_above85 <-
+  transcript100to103$`成績` > 85
+```
+創造 可選出來自法商學院的「要/不要」向量，pick_lawBusiness。
+```{r}
+set_LawBusiness <- c("法學院","商學院")
+pick_lawBusiness <-transcript100to103$學院 %in% set_LawBusiness
+transcript100to103$成績[pick_lawBusiness]
+```
 
