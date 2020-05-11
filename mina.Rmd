@@ -53,4 +53,51 @@ set_LawBusiness <- c("法學院","商學院")
 pick_lawBusiness <-transcript100to103$學院 %in% set_LawBusiness
 transcript100to103$成績[pick_lawBusiness]
 ```
+```{r}
+factor1 <- factor(
+  c("小明","小英")
+)
+levels(factor1)
+
+is.ordered(factor1)
+
+factor1 < "小英"
+```
+```{r}
+example <- list(
+  name=c("小明","小花","小新","美美"),
+  height=c(175,166,170,160),
+  weight=c(77,NA,60,43),
+  birthday=lubridate::ymd(c("1998-03-11","1999-12-22","1995-08-22","2001-10-10")),
+  hobby=c("美食 旅遊","旅遊 時尚","3C 美食","音樂 旅遊"),
+  residence=c("Taipei","New Taipei","Taichung","Kaohsiung"),
+  allowance=factor(c("0-1000","1001-2000","2000+","1001-2000")),
+  bloodType=c("A","B","B","O")
+```
+
+
+```{r}
+)
+```
+誰1998以後（含）出生或不住大台北
+```{r}
+install.packages("stringr")
+install.packages("glue")
+library(stringr)
+library(glue)
+```
+```{r}
+addresses <- c(
+  '臺中市后里區公館里尾社路385號',
+  '新竹市東區科學園路125號1樓',
+  '新竹市北區竹光路99號',
+  '金門縣金城鎮賢庵里山前33號',
+  '臺中市南屯區工業區二十四路23號1樓')
+myRegexSlotMachine <- "[0-9]+號"
+print(myRegexSlotMachine)
+str_view_all(addresses,myRegexSlotMachine)
+str_extract(addresses,myRegexSlotMachine)
+
+str_view_all(addresses,"[0-9]+") # 樓號也會選到
+```
 
