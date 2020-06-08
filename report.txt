@@ -1,0 +1,101 @@
+__CF_USER_TEXT_ENCODING
+                         0x1F5:0x2:0x35
+__KMP_REGISTERED_LIB_8686
+                         0x104bc9c20-cafe1c6a-libomp.dylib
+Apple_PubSub_Socket_Render
+                         /private/tmp/com.apple.launchd.qnGT0PwbHe/Render
+CLICOLOR_FORCE           1
+COMMAND_MODE             unix2003
+DISPLAY                  :0
+DYLD_FALLBACK_LIBRARY_PATH
+                         /Library/Frameworks/R.framework/Resources/lib:/Users/mina/lib:/usr/local/lib:/usr/lib:::/lib:/Library/Java/JavaVirtualMachines/jdk-11.0.1.jdk/Contents/Home/lib/server
+EDITOR                   vi
+GIT_ASKPASS              rpostback-askpass
+HOME                     /Users/mina
+LANG                     zh_TW.UTF-8
+LC_CTYPE                 zh_TW.UTF-8
+LN_S                     ln -s
+LOGNAME                  mina
+MAKE                     make
+MPLENGINE                tkAgg
+PAGER                    /usr/bin/less
+PATH                     /usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin
+R_BROWSER                /usr/bin/open
+R_BZIPCMD                /usr/bin/bzip2
+R_DOC_DIR                /Library/Frameworks/R.framework/Resources/doc
+R_GZIPCMD                /usr/bin/gzip
+R_HOME                   /Library/Frameworks/R.framework/Resources
+R_INCLUDE_DIR            /Library/Frameworks/R.framework/Resources/include
+R_LIBS_SITE              
+R_LIBS_USER              ~/Library/R/3.6/library
+R_PAPERSIZE              a4
+R_PDFVIEWER              /usr/bin/open
+R_PLATFORM               x86_64-apple-darwin15.6.0
+R_PRINTCMD               lpr
+R_QPDF                   /Library/Frameworks/R.framework/Resources/bin/qpdf
+R_RD4PDF                 times,inconsolata,hyper
+R_SESSION_TMPDIR         /var/folders/1y/0gw38h1d2bz_z_jtd68f70mr0000gn/T//Rtmpjw3Bzi
+R_SHARE_DIR              /Library/Frameworks/R.framework/Resources/share
+R_STRIP_SHARED_LIB       strip -x
+R_STRIP_STATIC_LIB       strip -S
+R_SYSTEM_ABI             osx,gcc,gxx,gfortran,gfortran
+R_TEXI2DVICMD            /usr/local/bin/texi2dvi
+R_UNZIPCMD               /usr/bin/unzip
+R_ZIPCMD                 /usr/bin/zip
+RMARKDOWN_MATHJAX_PATH   /private/var/folders/1y/0gw38h1d2bz_z_jtd68f70mr0000gn/T/AppTranslocation/57B4F081-F0E4-4D35-8757-5C0E6B71C53E/d/RStudio.app/Contents/Resources/resources/mathjax-26
+RS_PPM_FD_READ           18
+RS_PPM_FD_WRITE          19
+RS_RPOSTBACK_PATH        /private/var/folders/1y/0gw38h1d2bz_z_jtd68f70mr0000gn/T/AppTranslocation/57B4F081-F0E4-4D35-8757-5C0E6B71C53E/d/RStudio.app/Contents/MacOS/rpostback
+RS_SHARED_SECRET         168072824752491622650073
+RSTUDIO                  1
+RSTUDIO_CONSOLE_COLOR    256
+RSTUDIO_CONSOLE_WIDTH    85
+RSTUDIO_PANDOC           /private/var/folders/1y/0gw38h1d2bz_z_jtd68f70mr0000gn/T/AppTranslocation/57B4F081-F0E4-4D35-8757-5C0E6B71C53E/d/RStudio.app/Contents/MacOS/pandoc
+RSTUDIO_SESSION_PORT     46991
+RSTUDIO_USER_IDENTITY    mina
+RSTUDIO_WINUTILS         bin/winutils
+SED                      /usr/bin/sed
+SHELL                    /bin/bash
+SSH_ASKPASS              rpostback-askpass
+SSH_AUTH_SOCK            /private/tmp/com.apple.launchd.kATr2qugYC/Listeners
+TAR                      /usr/bin/tar
+TERM                     xterm-256color
+TMPDIR                   /var/folders/1y/0gw38h1d2bz_z_jtd68f70mr0000gn/T/
+USER                     mina
+XPC_FLAGS                0x0
+XPC_SERVICE_NAME         com.apple.xpc.launchd.oneshot.0x100000a3.RStudio
+[1] "zh_TW.UTF-8/zh_TW.UTF-8/zh_TW.UTF-8/C/zh_TW.UTF-8/zh_TW.UTF-8"
+<locale>
+Numbers:  123,456.78
+Formats:  %AD / %AT
+Timezone: UTC
+Encoding: UTF-8
+<date_names>
+Days:   Sunday (Sun), Monday (Mon), Tuesday (Tue), Wednesday (Wed), Thursday (Thu),
+        Friday (Fri), Saturday (Sat)
+Months: January (Jan), February (Feb), March (Mar), April (Apr), May (May), June
+        (Jun), July (Jul), August (Aug), September (Sep), October (Oct),
+        November (Nov), December (Dec)
+AM/PM:  AM/PM
+R version 3.6.3 (2020-02-29)
+Platform: x86_64-apple-darwin15.6.0 (64-bit)
+Running under: macOS Mojave 10.14.6
+
+Matrix products: default
+BLAS:   /System/Library/Frameworks/Accelerate.framework/Versions/A/Frameworks/vecLib.framework/Versions/A/libBLAS.dylib
+LAPACK: /Library/Frameworks/R.framework/Versions/3.6/Resources/lib/libRlapack.dylib
+
+locale:
+[1] zh_TW.UTF-8/zh_TW.UTF-8/zh_TW.UTF-8/C/zh_TW.UTF-8/zh_TW.UTF-8
+
+attached base packages:
+[1] stats     graphics  grDevices utils     datasets  methods   base     
+
+other attached packages:
+[1] readr_1.3.1     jsonlite_1.6.1  lubridate_1.7.4
+
+loaded via a namespace (and not attached):
+ [1] Rcpp_1.0.4      crayon_1.3.4    R6_2.4.1        magrittr_1.5    pillar_1.4.3   
+ [6] rlang_0.4.5     stringi_1.4.6   vctrs_0.2.4     tools_3.6.3     stringr_1.4.0  
+[11] hms_0.5.3       xfun_0.12       yaml_2.2.1      compiler_3.6.3  pkgconfig_2.0.3
+[16] knitr_1.28      tibble_2.1.3   
